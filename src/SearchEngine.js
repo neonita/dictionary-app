@@ -1,3 +1,5 @@
+// documentation: https://dictionaryapi.dev/
+
 import React, { useState } from "react";
 import axios from "axios";
 import "./SearchEngine.css";
