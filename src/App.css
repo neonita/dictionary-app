@@ -7,3 +7,13 @@
 .App h5 {
   font-weight: 400;
 }
+
+footer a:link,
+footer a:visited {
+  color: pink;
+  transition: color 0.5s ease-in-out;
+}
+
+footer a:hover {
+  color: rgb(238, 89, 114);
+}
