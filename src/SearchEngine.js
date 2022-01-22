@@ -2,27 +2,27 @@
 
 import React, { useState } from "react";
 import axios from "axios";
+import Definition from "./Definition";
 import "./SearchEngine.css";
 
 export default function SearchEngine() {
   const [keyword, setKeyword] = useState("");
+  const [definition, setDefinition] = useState(null);
 
   function displayWord(response) {
-    let definition = response.data[0];
-    console.log(definition);
+    setDefinition(response.data[0]);
   }
 
   function search(event) {
     event.preventDefault();
-
     const API_URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(API_URL).then(displayWord);
   }
 
   function searchKeyword(event) {
     let updateValue = event.target.value;
-    console.log(updateValue);
     setKeyword(updateValue);
+    console.log(updateValue);
   }
 
   return (
@@ -34,6 +34,7 @@ export default function SearchEngine() {
           onChange={searchKeyword}
         />
       </form>
+      <Definition definition={definition} />
     </div>
   );
 }
