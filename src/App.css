@@ -38,7 +38,6 @@ footer a:hover {
 
   position: fixed;
   top: 0em;
-  /* height: 2em; */
   width: 50vw;
 
   background: #fbf7ee;
@@ -88,7 +87,6 @@ footer a:hover {
   opacity: 0.5;
 }
 
-.right-column {
-  /* border: 1px solid; */
+/* .right-column {
   padding-top: 3.5em;
-}
+} */

@@ -12,3 +12,14 @@
   line-height: 1.7rem;
   outline: none;
 }
+
+.Definition {
+  display: block;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  left: 100%;
+  top: 0;
+  margin-top: 3em;
+  padding: 1em 2em;
+}
