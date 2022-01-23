@@ -2,7 +2,9 @@
 
 import React, { useState } from "react";
 import axios from "axios";
+// import { MagnifyingGlass } from "phosphor-react";
 import Definition from "./Definition";
+
 import "./SearchEngine.css";
 
 export default function SearchEngine() {
@@ -28,6 +30,7 @@ export default function SearchEngine() {
   return (
     <div className="SearchEngine">
       <form onSubmit={search}>
+        <i class="ph-magnifying-glass"></i>
         <input
           type="search"
           placeholder="Search for a definition..."

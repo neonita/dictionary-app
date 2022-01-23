@@ -1,6 +1,5 @@
 import "./App.css";
 import SearchEngine from "./SearchEngine";
-import Definition from "./Definition";
 
 function App() {
   return (

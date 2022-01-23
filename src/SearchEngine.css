@@ -1,16 +1,27 @@
-.SearchEngine input {
-  margin-top: 2em;
+form {
+  height: 2em;
+  margin-top: 7em;
   margin-left: 0.3em;
+}
+
+.SearchEngine input {
+  background-color: #fbf7ee;
   border: none;
   border-bottom: 1px solid rgba(34, 34, 34, 0.5);
   width: 300px;
-  background-color: #fbf7ee;
 }
 
 [type="search"] {
   font-size: 0.9rem;
   line-height: 1.7rem;
   outline: none;
+  padding-left: 1.7em;
+}
+
+.ph-magnifying-glass {
+  position: absolute;
+  padding-top: 0.45em;
+  padding-left: 0.08em;
 }
 
 .Definition {
