@@ -12,14 +12,13 @@ footer a:visited {
 
 footer a:hover {
   border-bottom: 1px solid rgba(34, 34, 34, 0.329);
+  background-color: #f9fff1;
 }
 
 .divider {
-  /* text-align: left; */
   position: fixed;
   right: 50vw;
   bottom: 0;
-  /* transform: rotate(-90deg); */
   z-index: 1;
 
   border: none;
@@ -54,6 +53,7 @@ footer a:hover {
 }
 
 .main-header-title a:hover {
+  background-color: #f9fff1;
   border-bottom: 1px solid rgba(34, 34, 34, 0.466);
 }
 
