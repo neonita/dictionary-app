@@ -30,7 +30,7 @@ export default function SearchEngine() {
   return (
     <div className="SearchEngine">
       <form onSubmit={search}>
-        <i class="ph-magnifying-glass"></i>
+        <i className="ph-magnifying-glass"></i>
         <input
           type="search"
           placeholder="Search for a definition..."
