@@ -3,7 +3,7 @@ const Phonetic = (props) => {
   return (
     <div className="Phonetic">
       <a href={props.phonetic.audio} rel="noopener noreferrer" target="_blank">
-        <i class="ph-play"></i>
+        <i className="ph-play"></i>
       </a>
       {/* <br /> */}
       <p style={{ color: "grey" }}>{props.phonetic.text}</p>

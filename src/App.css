@@ -108,6 +108,12 @@ footer a:hover {
   padding: 0.3em;
   border: 1px solid #020202c0;
   border-radius: 50%;
+  transition: all 0.15s ease-in-out;
+}
+
+.Phonetic i:hover {
+  border: 1px solid rgba(83, 70, 40, 0.342);
+  color: rgba(83, 70, 40, 0.342);
 }
 
 .Synonyms ul {
@@ -115,13 +121,17 @@ footer a:hover {
   padding-left: 0;
   list-style: none;
   color: rgba(34, 34, 34, 0.5);
-
+  font-size: 0.8rem;
+  width: 500px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .Synonyms li {
   margin-right: 0.3em;
+  margin-bottom: 0.7em;
   padding: 0em 0.5em;
-  border: 1px solid rgba(34, 34, 34, 0.5);
+  border: 1px solid #22222270;
   border-radius: 20px;
+  /* flex-wrap: wrap; */
 }
