@@ -47,6 +47,7 @@ footer a:hover {
 .main-header-title a:visited {
   padding-left: 0.2em;
   font-family: "Cormorant", "Times New Roman", serif;
+
   text-decoration: none;
   color: #222;
 }
@@ -87,10 +88,40 @@ footer a:hover {
   opacity: 0.5;
 }
 
-/* .right-column {
-  padding-top: 3.5em;
-} */
-
 .Definition {
   overflow: scroll;
+}
+
+.Phonetic a:link,
+.Phonetic a:visited {
+  text-decoration: none;
+  color: #020202c0;
+}
+
+.Phonetic a:hover {
+  cursor: pointer;
+  color: #202020;
+}
+
+.Phonetic i {
+  font-size: 0.85rem;
+  padding: 0.3em;
+  border: 1px solid #020202c0;
+  border-radius: 50%;
+}
+
+.Synonyms ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  color: rgba(34, 34, 34, 0.5);
+
+  display: flex;
+}
+
+.Synonyms li {
+  margin-right: 0.3em;
+  padding: 0em 0.5em;
+  border: 1px solid rgba(34, 34, 34, 0.5);
+  border-radius: 20px;
 }
