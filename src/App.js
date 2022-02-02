@@ -12,7 +12,6 @@ function App() {
       </header>
       <div className="container-fluid">
         <div className="row">
-          {/* <div className="col-sm-6"> */}
           <div className="left-column column-block">
             <div className="left-column-title">
               <h1>epeolatry</h1>
@@ -49,13 +48,6 @@ function App() {
               </small>
             </footer>
           </div>
-          {/* </div> */}
-
-          {/* <div className="col-sm-6">
-            <div className="right-column column-block">
-              <Definition />
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

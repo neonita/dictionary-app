@@ -8,7 +8,7 @@ export default function Definition(props) {
     return (
       <div className="Definition">
         <h1>{props.definition.word}</h1> {/* word */}
-        {props.result.phonetics.map((phonetic, index) => {
+        {props.definition.phonetics.map((phonetic, index) => {
           return (
             <div key={index}>
               <Phonetic phonetic={phonetic} />
