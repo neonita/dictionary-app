@@ -6,7 +6,7 @@ export default function Definition(props) {
   if (props.definition) {
     return (
       <div className="Definition">
-        <h1>{props.definition.word}</h1>
+        <h1>{props.definition.word}</h1> {/* word */}
         {props.definition.meanings.map(function (meaning, index) {
           return (
             <div key={index}>

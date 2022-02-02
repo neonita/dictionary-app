@@ -22,7 +22,7 @@ footer a:hover {
   z-index: 1;
 
   border: none;
-  border-left: 1px solid hsla(200, 10%, 50%, 100);
+  border-left: 1px solid rgba(83, 70, 40, 0.877);
   height: 100vh;
   width: 1px;
 }
@@ -90,3 +90,7 @@ footer a:hover {
 /* .right-column {
   padding-top: 3.5em;
 } */
+
+.Definition {
+  overflow: scroll;
+}
