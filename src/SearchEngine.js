@@ -29,7 +29,7 @@ export default function SearchEngine() {
 
     // images
     const PEXELS_API_KEY = `563492ad6f9170000100000136503a7aeb214c5a9a0b7d0869c85fdd`;
-    const PEXELS_API_URL = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+    const PEXELS_API_URL = `https://api.pexels.com/v1/search?query=${keyword}&per_page=8`;
     // authentication
     let headers = { Authorization: `Bearer ${PEXELS_API_KEY}` };
     axios
