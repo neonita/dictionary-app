@@ -17,7 +17,7 @@ export default function SearchEngine() {
   }
 
   function displayImages(response) {
-    console.log(response);
+    // console.log(response);
     setPhotos(response.data.photos);
   }
 
@@ -42,7 +42,7 @@ export default function SearchEngine() {
   function searchKeyword(event) {
     let updateValue = event.target.value;
     setKeyword(updateValue);
-    console.log(updateValue);
+    // console.log(updateValue);
   }
 
   return (
