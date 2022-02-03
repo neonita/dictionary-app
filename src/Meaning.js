@@ -2,7 +2,7 @@ import React from "react";
 import Synonyms from "./Synonyms";
 
 export default function Meaning(props) {
-  console.log(props.meaning);
+  // console.log(props.meaning);
 
   return (
     <div className="Meaning">
@@ -37,3 +37,4 @@ export default function Meaning(props) {
 }
 
 // to analyze and deconstruct the page: 26:08
+// pexels api key: 563492ad6f9170000100000136503a7aeb214c5a9a0b7d0869c85fdd

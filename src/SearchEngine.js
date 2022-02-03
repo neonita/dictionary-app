@@ -15,10 +15,26 @@ export default function SearchEngine() {
     setDefinition(response.data[0]);
   }
 
+  function displayImages(response) {
+    console.log(response);
+  }
+
   function search(event) {
+    // dictionary
     event.preventDefault();
     const API_URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(API_URL).then(displayWord);
+
+    // images
+    const PEXELS_API_KEY = `563492ad6f9170000100000136503a7aeb214c5a9a0b7d0869c85fdd`;
+    const PEXELS_API_URL = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+    // authentication
+    let headers = { Authorization: `Bearer ${PEXELS_API_KEY}` };
+    axios
+      .get(PEXELS_API_URL, {
+        headers: headers,
+      })
+      .then(displayImages);
   }
 
   function searchKeyword(event) {
