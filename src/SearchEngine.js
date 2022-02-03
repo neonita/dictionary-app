@@ -2,14 +2,15 @@
 
 import React, { useState } from "react";
 import axios from "axios";
-// import { MagnifyingGlass } from "phosphor-react";
 import Definition from "./Definition";
+import Photos from "./Photos";
 
 import "./SearchEngine.css";
 
 export default function SearchEngine() {
   const [keyword, setKeyword] = useState("");
   const [definition, setDefinition] = useState(null);
+  const [photos, setPhotos] = useState(null);
 
   function displayWord(response) {
     setDefinition(response.data[0]);
@@ -17,6 +18,7 @@ export default function SearchEngine() {
 
   function displayImages(response) {
     console.log(response);
+    setPhotos(response.data.photos);
   }
 
   function search(event) {
@@ -54,6 +56,7 @@ export default function SearchEngine() {
         />
       </form>
       <Definition definition={definition} />
+      <Photos photos={photos} />
     </div>
   );
 }
