@@ -2,9 +2,6 @@ import React from "react";
 import "./Photos.css";
 
 const Photos = (props) => {
-  console.log(props.photos);
-  console.log(`${props.alt}`);
-
   if (props.photos) {
     return (
       <div className="Photos">
@@ -17,7 +14,11 @@ const Photos = (props) => {
                   rel="noopenner noreferrer"
                   target="_blank"
                 >
-                  <img src={photo.src.landscape} className="img-fluid" />
+                  <img
+                    src={photo.src.landscape}
+                    alt={photo.url}
+                    className="img-fluid"
+                  />
                 </a>
               </div>
             );
